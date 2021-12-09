@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Formación Profesional</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- MATERIAL DESINg-->
+    <!--  ***************************************** MATERIAL DESignER-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=table ***************************************** MATERIAL DESignER-->
+
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <!-- Edito html para text area -->
+    <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+
+    <!--                             TABLA DATOS    https://frappe.io/datatable/docs     -->
+    <link href="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
+    <script src="https://unpkg.com/clusterize.js@0.18.0/clusterize.min.js"></script>
+    <!-- include the lib -->
+    <script src="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.js"></script>
+
+    <!-- initialize DataTable -->
+    <!--                             TABLA DATOS  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+
+
+<body>
+    <main>
+
+        <header class="cabecera">
+            <picture style="margin: 20px;">
+                <source media="(min-width: 500px)" srcset="imagenes/Logo.png">
+                <img id="imagenTitulo" src="imagenes/Logop.png" alt="Logo CIFP">
+            </picture>
+            <h1 id="titulo">Registro Actividades (Session Storage)</h1>
+
+        </header>
+
+
+        <article class="menu">
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend>Tarea</legend>
+                        <input type="text" id="tarea">
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Tiempo Programado</legend>
+                        <input type="number" id="Tp">
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Tiempo Empleado</legend>
+                        <input type="number" id="Te">
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Description</legend>
+                        <textarea id="descripcion" maxlength="200" cols="50"></textarea>
+                    </fieldset>
+                </li>
+                <i id="grabarCookie" class="fas fa-save"></i>
+                <i id="leerCookie" class="fas fa-table"></i>
+                <i id="borrarCookie" class="fas fa-trash-alt"></i>
+            </ul>
+            <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=table   icono materikal designer-->
+        </article>
+
+
+        <article aria-label="Datos elemento" class="datosdelejercicio">
+            <header>
+                <h3>
+                    Login
+                </h3>
+            </header>
+            <fieldset>
+                <div class="container">
+                    <form action="/action_page.php" id="form">
+                        <div>
+                            <label>Usuario</label>
+                            <input type="text" style="width:35%; left: 33%;position: relative;" name="usuario"
+                                placeholder="Nombre de Usuario" class="form-control" id="usuario" />
+                        </div>
+                        <div">
+                            <label>Contraseña</label>
+                            <input type='password' style="width:35%; left: 33%;position: relative;" id="contra1"
+                                name="contra1" placeholder="Contraseña" class="form-control">
+                </div>
+
+                <div class="form-group col-lg-12">
+                    <button type="button" id="accesoM" class="btn   color-pie">Acceder</button>
+                </div>
+                </div>
+                </form>
+                </form>
+                </div>
+
+            </fieldset>
+
+        </article>
+
+        <article class="cajamapa">
+
+            <header>
+                <hgroup>
+                    <h1>Tabla Articulos</h1>
+                </hgroup>
+            </header>
+            <!--                             TABLA DATOS                               -->
+            <div id="datatable"></div>
+
+            <!--                             TABLA DATOS                               -->
+
+
+        </article>
+
+
+
+
+
+        <footer class="pie">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/todofp"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            Desarrollo de Aplicaciones Web(<cite>DAW</cite>) &copy; CIFP Santa Catalina
+
+        </footer>
+
+
+
+    </main>
+
+</body>
+
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeNRBEIWYeWRRvY8On_9pkSD1_J_zLykQ&libraries=geometry">
+    </script>
+</script>
+<script src="./js/funciones.js"></script>
+
+
+
+
+</html>
